@@ -1,0 +1,59 @@
+import React from 'react';
+import { Link } from '@reach/router';
+// import { Select, Button } from 'antd';
+import styles from './Content.css';
+
+// const { Option } = Select;
+const count = 5;
+
+const Content = () => (
+  <div className={styles.body}>
+    <Link to="/reactMD-logo">Logo</Link>
+    <Link to="/counter">Counter</Link>
+    <Link to={`/preset-counter?startValue=${count}`}>Preset Counter</Link>
+  </div>
+);
+
+export default Content;
+
+
+-----
+
+import React, { useState } from 'react';
+import { Link } from '@reach/router';
+import { Select, Button } from 'antd';
+import styles from './Content.css';
+
+const { Option } = Select;
+const count = 5;
+
+const Content = () => {
+  const [name, setName] = useState('spy');
+
+  return (
+    <div className={styles.body}>
+      <Link to="/reactMD-logo">Logo</Link>
+      <Link to="/counter">Counter</Link>
+      <Link to={`/preset-counter?startValue=${count}`}>Preset Counter</Link>
+      <div className={styles.name}>
+        <div>Select Class</div>
+        <Select value={name} onChange={setName} style={{ width: 130 }}>
+          <Option value="spy">Spy</Option>
+          <Option value="pyro">Pyro</Option>
+          <Option value="heavy">Heavy</Option>
+          <Option value="medic">Medic</Option>
+          <Option value="soldier">Soldier</Option>
+          <Option value="scout">Scout</Option>
+          <Option value="engineer">Engineer</Option>
+          <Option value="sniper">Sniper</Option>
+          <Option value="demo">Demo</Option>
+        </Select>
+        <Button type="primary">
+          <Link to={`/class/${name}`}>Go</Link>
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default Content;

@@ -1,7 +1,17 @@
 .body {
-  composes: fontStyle from '../../styles/global.css';
   display: flex;
   flex-flow: column;
   align-content: flex-start;
   padding: 20px;
+  font-size: 2rem;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.name div,
+select {
+  padding-right: 10px;
 }

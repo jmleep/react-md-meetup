@@ -1,0 +1,14 @@
+.counter {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+}
+
+.display {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+}

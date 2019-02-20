@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from '@reach/router';
+// import { Select, Button } from 'antd';
 import styles from './Content.css';
+
+// const { Option } = Select;
+const count = 5;
 
 const Content = () => (
   <div className={styles.body}>
-    <h2>Reach Router!</h2>
-
-    <div>Home</div>
-    <div>Image</div>
-    <div>List</div>
+    <Link to="/reactMD-logo">Logo</Link>
+    <Link to="/counter">Counter</Link>
+    <Link to={`/preset-counter?startValue=${count}`}>Preset Counter</Link>
   </div>
 );
 

@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from '@reach/router';
 import styles from './Header.css';
 import logo from '../../static/crab.png';
 
 const Header = () => (
-  <div>
+  <Link to="/">
     <div className={styles.header}>
       <img src={logo} alt="ReactMD Crab Logo" className={styles.logo} />
-      ReactMD Demo
+      Reach Router
     </div>
-  </div>
+  </Link>
 );
 
 export default Header;

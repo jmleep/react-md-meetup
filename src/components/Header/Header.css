@@ -1,6 +1,5 @@
 .header {
-  composes: fontStyle from '../../styles/global.css';
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   background-color: #00435b;
   padding: 10px;
