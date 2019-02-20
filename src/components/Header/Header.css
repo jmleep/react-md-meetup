@@ -2,6 +2,14 @@
   composes: fontStyle from '../../styles/global.css';
   font-size: 3rem;
   color: white;
-  background-color: #2a52be;
+  background-color: #00435b;
   padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  padding-right: 15px;
+  height: 65px;
 }
