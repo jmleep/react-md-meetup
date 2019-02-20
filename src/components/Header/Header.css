@@ -7,9 +7,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 60px;
 }
 
 .logo {
   padding-right: 15px;
-  height: 65px;
+  height: 55px;
 }

@@ -8,7 +8,6 @@ document.body.style.margin = 0;
 const App = () => (
   <div className={styles.app}>
     <Header />
-    <br />
     <Content />
   </div>
 );

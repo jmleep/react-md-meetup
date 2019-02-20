@@ -1,0 +1,7 @@
+.body {
+  composes: fontStyle from '../../styles/global.css';
+  display: flex;
+  flex-flow: column;
+  align-content: flex-start;
+  padding: 20px;
+}
