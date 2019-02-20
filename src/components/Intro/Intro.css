@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+}
+
+.display {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display div {
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+
+.display p,
+li {
+  font-size: 1.5rem;
+}

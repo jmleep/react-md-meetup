@@ -1,6 +1,8 @@
 import React from 'react';
 import { Router, Link } from '@reach/router';
 import Header from '../Header/Header';
+import Intro from '../Intro/Intro';
+import About from '../About/About';
 import Content from '../Content/Content';
 import CounterView from '../CounterView/CounterView';
 import PresetCounterView from '../PresetCounterView/PresetCounterView';
@@ -22,10 +24,12 @@ const App = () => (
     <Header />
     <Router>
       <Content path="/" />
+      <Intro path="intro" />
       <Image path="reactMD-logo" />
       <CounterView path="counter" />
       <PresetCounterView path="preset-counter" />
       <ClassView path="class/:name" />
+      <About path="about" />
     </Router>
   </div>
 );

@@ -4,6 +4,7 @@
   align-content: flex-start;
   padding: 20px;
   font-size: 2rem;
+  height: 95vh;
 }
 
 .name {
@@ -14,4 +15,12 @@
 .name div,
 select {
   padding-right: 10px;
+}
+
+.name li {
+  font-size: 0.5rem;
+}
+
+.about {
+  margin-top: auto;
 }
